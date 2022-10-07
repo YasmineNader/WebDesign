@@ -1,0 +1,139 @@
+body {
+    background: url(../images/banner.jpg) no-repeat;
+    background-size: cover;
+    margin: 0px;
+}
+
+main {
+    width: 100%;
+}
+
+/*nav*/
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(black, gray);
+    height: 60px;
+}
+
+/* navbar logo */
+
+nav img {
+    width: 45px;
+    padding: 2px 20px;
+}
+
+/* navbar */
+
+nav ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    line-height: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 80px;
+    padding: 0px 20px;
+}
+
+/* banner */
+
+.header_pic {
+    background-color: yellow;
+}
+
+.header_pic img {
+    clip-path: circle(50% at 50% 25%);
+    margin: auto;
+    display: block;
+    width: 90%;
+}
+
+.form1 h1 {
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.form1 {
+    text-align: center;
+}
+
+form {
+    width: 870px;
+    background-color: #0005;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.field {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+input, select {
+    width: 600px;
+    height: 40px;
+    font-size: 25px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: 50px;
+    height: 20px;
+}
+
+input[type="submit"], input[type="reset"] {
+    width: 210px;
+    height: 60px;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+input[type="submit"] {
+    background-color: green;
+}
+
+input[type="reset"] {
+    background-color: rgb(199, 5, 5);
+}
+
+footer {
+    background-color: black;
+    height: 50px;
+    width: 100%
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}

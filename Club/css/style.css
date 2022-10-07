@@ -1,0 +1,301 @@
+body {
+    margin: 0px;
+}
+
+main {
+    width: 100%;
+}
+
+/*nav*/
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(black, gray);
+    height: 60px;
+}
+
+/* navbar logo */
+
+nav img {
+    width: 45px;
+    padding: 2px 20px;
+}
+
+/* navbar */
+
+nav ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    line-height: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 80px;
+    padding: 0px 20px;
+}
+
+/* banner */
+
+.header_pic {
+    background-color: yellow;
+}
+
+.header_pic img {
+    clip-path: circle(50% at 50% 25%);
+    margin: auto;
+    display: block;
+    width: 90%;
+}
+
+.first_section {
+    position: relative;
+}
+
+/* search-bar */
+
+.search_bar {
+    background-color: black;
+    width: 192px;
+    height: 50px;
+    position: fixed;
+    z-index: 5;
+    top: 180px;
+    left: -150px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    /* clip-path: circle(10% at 0% 50%); */
+    transition: all 3s;
+    -webkit-transition: all 3s;
+    -moz-transition: all 3s;
+    -ms-transition: all 3s;
+    -o-transition: all 3s;
+}
+
+.search_bar:hover {
+    left: 0;
+    /* clip-path: circle(140% at 0% 50%); */
+}
+
+.white_bar {
+    background-color: white;
+    border-radius: 6px;
+    float: left;
+    width: 98px;
+    height: 20px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    padding: 4px;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+
+#imgsearch {
+    margin: 13px;
+    margin-left: 29px;
+}
+
+/* sports-section */
+
+.sports_images {
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    top: -50px;
+}
+
+.sports {
+    width: 300px;
+    height: 150px;
+    border: 2px solid #e4e414;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color: white;
+    position: relative;
+}
+
+.sports img {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    margin-top: 30px;
+}
+
+.d2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    box-sizing: border-box;
+    padding-top: 10px;
+    background-color: rgba(241, 230, 78, 0.5);
+    clip-path: circle(0% at 0% 0%);
+    overflow: hidden;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.sports:hover .d2 {
+    clip-path: circle(70% at 0% 0%);
+}
+
+.d2 h1 {
+    margin-left: 10px;
+}
+
+/* about us section */
+
+.about_us h1, .ourschedule h1, .Latest_News h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: rgb(45 23 175);
+}
+
+.about_us {
+    margin-top: -60px;
+}
+
+hr {
+    width: 30%;
+}
+
+/* fitness section */
+
+.fitness {
+    display: flex;
+    width: 400px;
+    width: 90%;
+    margin: auto;
+}
+
+.fit_par {
+    color: rgb(45 23 175);
+    width: 60%;
+    margin-right: 20px;
+}
+
+.fit_image {
+    border-radius: 10px;
+    position: relative;
+    /* overflow: hidden;
+    width: 30%; */
+}
+
+#aboutimg {
+    border-radius: 25px;
+    z-index: 1;
+}
+
+.d1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #fff5;
+    transition: all 3s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    clip-path: circle(0% at 50% 50%);
+}
+
+.fit_image:hover .d1 {
+    clip-path: circle(100% at 50% 50%);
+}
+
+/* schedule-table */
+
+table {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+tr:nth-of-type(even) {
+    background-color: gray;
+}
+
+/* latest news section */
+
+.container_news {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.news_title {
+    border: 1px solid black;
+    width: 400px;
+    padding: 10px;
+}
+
+/* video & image section  */
+
+.news_title img {
+    width: 400px;
+}
+
+.Img_vid {
+    background-color: yellow;
+    height: 325px;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#video {
+    margin-bottom: 10px;
+}
+
+.Img_vid img {
+    width: 500px;
+}
+
+iframe {
+    width: 500px;
+    height: 300px;
+}
+
+map iframe {
+    width: 100%;
+}
+
+/* footer */
+
+footer {
+    background-color: black;
+    height: 50px;
+    width: 100%
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}

@@ -1,0 +1,588 @@
+@font-face {
+    font-family: 'Pacifico';
+    src: url(../webfonts/Pacifico.ttf);
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+}
+
+/* header section */
+
+header {
+    background: url(../images/b1.jpg) no-repeat;
+    background-size: cover;
+    height: 750px;
+}
+
+.innerheader {
+    margin: auto 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    font-family: 'Pacifico', cursive;
+    margin-top: 6px;
+    font-size: 25px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul li {
+    float: left;
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 30px;
+}
+
+.container {
+    margin: 250px;
+}
+
+.joy_yellowB {
+    width: 400px;
+    height: 200px;
+    border: 5px solid yellow;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.pa1 {
+    margin-left: 35px;
+    padding-top: 15px;
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+
+.pa2 {
+    text-align: center;
+    color: rgb(22, 202, 133);
+    font-size: 40px;
+    margin: 0px;
+}
+
+.thrill {
+    width: 350px;
+    height: 130px;
+    background: #fffc;
+    position: relative;
+    left: 25px;
+    top: 35px;
+    box-sizing: border-box;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.container:hover .thrill {
+    transform: translate(120px, 140px);
+    -webkit-transform: translate(120px, 140px);
+    -moz-transform: translate(120px, 140px);
+    -ms-transform: translate(120px, 140px);
+    -o-transform: translate(120px, 140px);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+/* cards */
+
+.cards {
+    width: 1100px;
+    margin: auto;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card1, .card2, .card3, .card4 {
+    position: relative;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transform-style: preserve-3d;
+}
+
+.back {
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.front {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.back h2 {
+    color: orange;
+}
+
+/* adventure */
+
+.adventure {
+    background: url(../images/b3.jpg) no-repeat;
+    background-size: cover;
+    height: 550px;
+    padding: 30px;
+}
+
+.p1 {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: cursive;
+    padding-top: 150px;
+}
+
+.p2 {
+    text-align: center;
+    color: rgb(255, 187, 0);
+    font-size: 25px;
+}
+
+.types {
+    width: 900px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(255, 187, 0);
+}
+
+.type1, .type2, .type3, .type4, .type5, .type6 {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.type1 p, .type2 p, .type3 p, .type4 p, .type5 p, .type6 p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.type1:hover, .type2:hover, .type3:hover, .type4:hover, .type5:hover, .type6:hover {
+    transform: scale(1.25, 1.25);
+    -webkit-transform: scale(1.25, 1.25);
+    -moz-transform: scale(1.25, 1.25);
+    -ms-transform: scale(1.25, 1.25);
+    -o-transform: scale(1.25, 1.25);
+}
+
+.type1 .icon::before {
+    content: "\26F4";
+    color: white;
+    font-size: 25px;
+}
+
+.type2 .icon::before {
+    content: "\2709";
+    color: white;
+    font-size: 25px;
+}
+
+.type3 .icon::before {
+    content: "\2708";
+    color: white;
+    font-size: 25px;
+}
+
+.type4 .icon::before {
+    content: "\2764";
+    color: white;
+    font-size: 25px;
+}
+
+.type5 .icon::before {
+    content: "\26DF";
+    color: white;
+    font-size: 25px;
+}
+
+.type6 .icon::before {
+    content: "\26F1";
+    color: white;
+    font-size: 25px;
+}
+
+/* offers */
+
+.offers {
+    width: 880px;
+    margin: auto;
+    height: 500px;
+}
+
+.offersection1, .offersection2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+
+.offersection1 .offer, .offersection2 .offer {
+    border: 1px solid lightgray;
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.offer h1, .spec_par h1 {
+    color: rgb(34, 189, 182);
+}
+
+.offer .fontawe1::before {
+    content: "\f3d1";
+    font-family: "Font Awesome 5 Free";
+    color: black;
+}
+
+.offer .fontawe2::before {
+    content: "\f3a5";
+    font-family: "Font Awesome 5 Free";
+    color: black;
+}
+
+.offer .fontawe3::before {
+    content: "\f109";
+    font-family: "Font Awesome 5 Free";
+    color: black;
+}
+
+.offer .fontawe4::before {
+    content: "\f0c0";
+    font-family: "Font Awesome 5 Free";
+    color: black;
+}
+
+.offer .fontawe5::before {
+    content: "\f57d";
+    font-family: "Font Awesome 5 Free";
+    color: black;
+}
+
+.offer .fontawe6::before {
+    content: "\f279";
+    font-family: "Font Awesome 5 Free";
+    color: black;
+}
+
+/* special */
+
+.special {
+    display: flex;
+    background-color: lightgray;
+    height: 400px;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+.par_animation {
+    border: 5px solid rgb(34, 189, 182);
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.spec_par {
+    position: relative;
+    padding: 80px;
+}
+
+.spec_par:hover .par_animation {
+    left: -360px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+/* gallery */
+
+.gallery {
+    width: 1100px;
+    height: 500px;
+    margin: auto;
+}
+
+.galleryimg:hover, .galleryimg2:hover {
+    transform: scale(1.25, 1.25);
+    -webkit-transform: scale(1.25, 1.25);
+    -moz-transform: scale(1.25, 1.25);
+    -ms-transform: scale(1.25, 1.25);
+    -o-transform: scale(1.25, 1.25);
+}
+
+.img_gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.galleryimg {
+    width: 170px;
+}
+
+.galleryimg2 {
+    width: 355px;
+}
+
+.img_gallery img {
+    margin-top: 12px;
+    margin-right: 12px;
+}
+
+/* readmore */
+
+.img_read1, .img_read2 {
+    background: url(../images/b4.jpg) no-repeat;
+    background-size: cover;
+    height: 450px;
+    padding: 80px;
+    box-sizing: border-box;
+}
+
+.img_read2 {
+    background: url(../images/g6.jpg) no-repeat;
+}
+
+.par_read:hover, .par_read2:hover, .img_read2:hover, .img_read1:hover {
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+
+.sect1 .par_read, .sect2 .par_read2 {
+    width: 50%;
+    background-color: lightgray;
+    padding: 80px;
+    box-sizing: border-box;
+    height: 370px;
+}
+
+.sect1 .img_read1, .sect2 .img_read2 {
+    width: 50%;
+    height: 370px;
+}
+
+input[value="Read More"] {
+    color: white;
+    background-color: #000c;
+    height: 40px;
+    width: 120px;
+}
+
+.readhead {
+    color: rgb(22, 202, 133);
+}
+
+.sect1, .sect2 {
+    display: flex;
+    justify-content: center;
+}
+
+/* booking */
+
+.booking {
+    margin: auto;
+    width: 1000px;
+}
+
+.booksec {
+    display: flex;
+}
+
+.bookhead {
+    color: orange;
+}
+
+.bookhere {
+    color: rgb(25, 162, 110);
+    text-decoration: none;
+    margin-right: 70px;
+}
+
+.booksec1 img {
+    width: 230px;
+}
+
+.booksec1:hover {
+    transform: rotateX(20deg);
+    -webkit-transform: rotateX(20deg);
+    -moz-transform: rotateX(20deg);
+    -ms-transform: rotateX(20deg);
+    -o-transform: rotateX(20deg);
+}
+
+span {
+    font-weight: bold;
+}
+
+.imgbook {
+    position: relative;
+}
+
+.stars {
+    position: absolute;
+    z-index: 2;
+}
+
+.stars img {
+    width: 140px;
+    margin-left: 10px;
+}
+
+/* join */
+
+.join {
+    background: url(../images/b4.jpg) no-repeat;
+    background-size: cover;
+    height: 500px;
+    padding: 120px;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+.joinform input[type="text"] {
+    width: 300px;
+}
+
+input[value="Subscribe"] {
+    color: white;
+    background-color: rgb(22, 202, 133);
+    height: 40px;
+    width: 160px;
+    font-weight: bold;
+}
+
+.join h1, .contact h1, .booking h1, .par_gallery h1, .offers .offerh {
+    text-align: center;
+    font-size: 18px;
+    font-family: cursive;
+}
+
+.join h1 {
+    color: white;
+}
+
+.join p, .contact p, .booking .bookp1, .par_gallery p, .offers .adven {
+    text-align: center;
+    color: orange;
+    font-size: 25px;
+}
+
+.joinform {
+    text-align: center;
+    background-color: #fff3;
+    height: 60px;
+    width: 50%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+input[value="Join"] {
+    background-color: rgb(22, 202, 133);
+    width: 150px;
+    height: 40px;
+}
+
+input[type="text"] {
+    height: 34px;
+    width: 170px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 355px;
+    height: 130px;
+    resize: none;
+    margin-bottom: 12px;
+}
+
+/* contact */
+
+.consec {
+    display: flex;
+    width: 800px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+input[value="Send"] {
+    background-color: rgb(22, 202, 133);
+    width: 100%;
+    height: 45px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* footer */
+
+.social {
+    background-color: #000b;
+    height: 200px;
+    text-align: center;
+    color: white;
+    padding-top: 12px;
+    box-sizing: border-box;
+    margin-top: 15px;
+}
+
+.endfoot {
+    background: black;
+    height: 50px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}

@@ -1,0 +1,19 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    background-color: black;
+    height: 60px;
+}
+
+.cards_section{
+    background:#f8f9fa;
+    min-height: 500px;
+}
+
+
+.back{
+    width:150px;
+    margin-left: auto;
+}
